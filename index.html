@@ -4,24 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Space Viewer</title>
 </head>
 <body>
-    <div class="container">
-        <img src= "images/hassan.jpg" id="img1">
-        <img src= "images/newbackpack.png" id="img2">
+    <div class="title">
+        <h1>Space Viewer</h1>
+    </div>
 
-        <div class="options">
-            hi
-            <button onclick="gammaRay()">Gamma Ray</button>
-            <button onclick="xRay()">X-Ray</button>
-            <button onclick="visibleLight()">Visible Light</button>
-            <button onclick="infrared()">Infrared</button>
-            <button onclick="microwave()">Microwave</button>
-            <button onclick="radioWave()">Radio Wave</button>
-            <button onclick="combined()">Combined</button>
-        </div>
+    <div class="description">
+        <p>
+            This website features the Milky Way galaxy, as seen from Earth's night sky. 
+            There are buttons below that allow you to see what the Milky Way looks like
+            from different electromagnetic wavelenghts!
+        </p>
+    </div>
+    <div class="container">
+        <img src= "images/gamma.png" id="img1">
+        <img src= "images/x-ray.png" id="img2">
+        <img src= "images/visible.png" id="img3">
+        <img src= "images/infrared.png" id="img4">
+        <img src= "images/microwave.png" id="img5">
+        <img src= "images/radio.png" id="img6">
+        <img src= "images/combined.png" id="img7">
+
+
+
+    </div> 
+    <div class="options">
+        <button id="gammaButton" onclick="gammaRay()">Gamma Ray</button>
+        <button id="xrayButton" onclick="xRay()">X-Ray</button>
+        <button id="visibleButton" onclick="visibleLight()">Visible Light</button>
+        <button id="infraredButton" onclick="infrared()">Infrared</button>
+        <button id="microwaveButton" onclick="microwave()">Microwave</button>
+        <button id="radioButton" onclick="radioWave()">Radio Wave</button>
+        <button id="combinedButton" onclick="combined()">Combined</button>
+        <a id="source" href="http://skysurvey.org/">skysurvey.org</a>
+    </div>
 
     <script src="script.js"></script>
 </body>
